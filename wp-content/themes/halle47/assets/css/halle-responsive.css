@@ -1,0 +1,551 @@
+@media (min-width: 1400px) {
+	.container,
+	.container-lg,
+	.container-md,
+	.container-sm,
+	.container-xl {
+		max-width: 1210px;
+	}
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1700px) {
+	.site_navigation {
+		padding: 30px 10px;
+	}
+
+	.site_branding .site_logo {
+		max-width: 150px;
+		margin-right: 10px;
+	}
+	.site_branding .site_tagline {
+		font-size: 25px;
+		line-height: 30px;
+	}
+
+	.navigation_right_btn {
+		margin-left: 20px;
+	}
+
+	.main_menu ul li {
+		margin: 0 10px;
+	}
+}
+
+/* X-Large devices (large desktops, 1200px to 1400px) */
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+	.site_navigation {
+		padding: 30px 10px;
+	}
+	.site_branding .site_logo {
+		max-width: 125px;
+		margin-right: 10px;
+	}
+	.site_branding .site_tagline {
+		font-size: 20px;
+		line-height: 25px;
+	}
+	.navigation_right_btn {
+		margin-left: 10px;
+	}
+	.main_menu ul li {
+		margin: 0 8px;
+	}
+}
+
+/* Large devices (desktops, 992px to 1199px) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.site_branding {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.site_branding .site_logo {
+		max-width: 130px;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.site_branding .site_tagline {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.site_navigation {
+		padding: 30px 10px;
+	}
+
+	.navigation_right_btn {
+		margin-left: 10px;
+	}
+
+	.main_menu ul li {
+		margin: 0 5px;
+	}
+
+	.main_menu ul li > a {
+		font-size: 12px;
+	}
+
+	.navigation_right_btn > a {
+		font-size: 14px;
+	}
+	.news-section .section-title {
+		max-width: 300px;
+	}
+	h2 {
+		font-size: 45px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	.about-section .right-area {
+		padding-left: 30px;
+	}
+	.urbanism-section .right-area {
+		margin-left: 30px;
+	}
+}
+
+/* Medium devices (tablets, 768px to 991px) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.site_header {
+		padding: 80px 0 40px;
+	}
+	.site-header .logo-box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 40px;
+	}
+	.site-header .logo-box .mobile_bar {
+		display: inline-block;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		margin-right: 40px;
+	}
+	.site-header .logo-box .logo {
+		max-width: 300px;
+		width: 100%;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	h3 {
+		font-size: 25px;
+	}
+	.news-section .top-border {
+		margin-bottom: 50px;
+	}
+	.news-section .section-title {
+		max-width: 286px;
+		margin-bottom: 45px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.section-title p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.news-section .grid-item {
+		width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	.news-section .mobile_news .grid-item:nth-child(2) {
+		margin-bottom: 0px;
+	}
+	.news-section {
+		background-size: cover;
+		background-position: center center;
+	}
+	.mobile_all_news {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.mobile_all_news > a {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: var(--color-gray);
+		text-decoration: underline;
+	}
+	.gallery-section {
+		margin-top: 86px;
+	}
+	.about-section {
+		padding-top: 75px;
+		padding-bottom: 65px;
+	}
+	.about-section .section-title h2 {
+		margin-bottom: 30px;
+	}
+	.about-section .section-title {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-section .slider {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+	.about-section .right-area {
+		padding-left: 0;
+		max-width: 350px;
+		margin: auto;
+	}
+	.urbanism-section {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	.urbanism-section .section-title-2 {
+		max-width: 400px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 55px;
+	}
+	.urbanism-section .left-area {
+		max-width: 400px;
+		margin: auto;
+		text-align: center;
+	}
+	.urbanism-section .left-area p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.urbanism-section .right-area {
+		margin-left: 0;
+		text-align: center;
+		margin-top: 40px;
+	}
+	.urbanism-section .bottom-text-box {
+		margin-top: 30px;
+	}
+	.memory-section .slider-box {
+		width: 100%;
+		margin-bottom: 62px;
+	}
+	.memory-section .contents-box {
+		max-width: 350px;
+		padding: 0;
+		margin: auto;
+	}
+	.testimonial-section .top-border {
+		display: none;
+	}
+	.memory-section {
+		padding-bottom: 53px;
+	}
+	.testimonial-section {
+		padding-top: 50px;
+		background-color: #fff;
+	}
+	.testimonial-section .testimonial-box img.quote-1 {
+		top: -45px;
+		left: 50px;
+	}
+	.testimonial-section .testimonial-box img.quote-2 {
+		right: 0;
+		bottom: -70px;
+	}
+	.testimonial-section .testimonial-box {
+		padding: 65px 20px 60px 30px;
+	}
+	.testimonial-section .testimonial-box p {
+		margin-bottom: 0;
+		max-width: 310px;
+		width: 100%;
+		margin: auto;
+	}
+	.info-section {
+		padding-top: 0;
+		padding-bottom: 60px;
+	}
+	.info-section .section-title-2 {
+		margin-bottom: 58px;
+	}
+	footer p {
+		text-align: center;
+		margin-top: 50px;
+	}
+}
+
+/* X-Small devices (small mobile) (portrait phones, less than 767px) */
+@media only screen and (max-width: 767px) {
+	.site_header {
+		padding: 46px 0 60px;
+	}
+	.site-header .logo-box {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.site-header .logo-box .mobile_bar {
+		display: inline-block;
+		max-width: 55px;
+		width: 100%;
+		height: 55px;
+		border-radius: 50%;
+		margin-right: 30px;
+	}
+	.site-header .logo-box .logo {
+		max-width: 200px;
+		width: 100%;
+	}
+	.mobile_menu {
+		max-width: 100%;
+		padding: 45px;
+	}
+	.mobile_menu .mobile_menu_top {
+		margin-top: 0;
+	}
+	header p {
+		font-size: 17px;
+		margin-bottom: 0;
+	}
+	h2 {
+		font-size: 30px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	.news-section .top-border {
+		margin-bottom: 42px;
+		height: 11px;
+	}
+	.news-section .section-title {
+		max-width: 286px;
+		margin-bottom: 45px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.section-title h2 {
+		margin-bottom: 10px;
+	}
+	.section-title p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.news-section .grid-item {
+		width: 350px;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 30px;
+	}
+	.news-section .grid-item .contents {
+		margin: 50px 20px;
+	}
+	.news-section .grid-item .contents p {
+		font-size: 15px;
+		line-height: 23px;
+	}
+	.news-section .mobile_news .grid-item:nth-child(2) {
+		margin-bottom: 0px;
+	}
+	.news-section {
+		background-size: cover;
+		background-position: center center;
+	}
+	.mobile_all_news {
+		max-width: 350px;
+		width: 100%;
+		margin-top: 30px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 20px;
+	}
+	.mobile_all_news > a {
+		display: inline-block;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: uppercase;
+		color: var(--color-gray);
+		text-decoration: underline;
+	}
+	.gallery-section {
+		margin-top: 86px;
+	}
+	.carousel-item {
+		height: 600px;
+	}
+	.w-100 {
+		height: 100% !important;
+		object-fit: cover;
+	}
+	.about-section {
+		padding-top: 75px;
+		padding-bottom: 65px;
+	}
+	.about-section .section-title h2 {
+		margin-bottom: 30px;
+	}
+	.about-section .section-title {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.about-section .slider {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 50px;
+	}
+	.about-section .right-area {
+		padding-left: 0;
+		max-width: 350px;
+		margin: auto;
+	}
+	.urbanism-section {
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
+	.urbanism-section .section-title-2 {
+		max-width: 336px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 55px;
+	}
+	.urbanism-section .left-area {
+		max-width: 348px;
+		margin: auto;
+		text-align: center;
+	}
+	.urbanism-section .left-area p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+	.urbanism-section .right-area {
+		margin-left: 0;
+		text-align: center;
+		margin-top: 40px;
+	}
+	.urbanism-section .bottom-text-box {
+		margin-top: 30px;
+	}
+	.memory-section .slider-box {
+		width: 100%;
+		margin-bottom: 62px;
+	}
+	.memory-section .contents-box {
+		max-width: 306px;
+		width: 100%;
+		padding: 0;
+		margin: auto;
+	}
+	.testimonial-section .top-border {
+		display: none;
+	}
+	.testimonial-section .section-title-2 {
+		margin-bottom: 65px;
+	}
+	.memory-section {
+		padding-bottom: 53px;
+	}
+	.testimonial-section {
+		padding-top: 50px;
+		padding-bottom: 110px;
+		background-color: #fff;
+	}
+	.testimonial-section .testimonial-box img.quote-1 {
+		top: -45px;
+		left: 30px;
+	}
+	.testimonial-section .testimonial-box img.quote-2 {
+		right: 0;
+		bottom: -70px;
+	}
+	.testimonial-section .testimonial-box {
+		padding: 65px 20px 60px 30px;
+	}
+	.testimonial-section .testimonial-box p {
+		margin-bottom: 0;
+		max-width: 310px;
+		width: 100%;
+		margin: auto;
+	}
+	.info-section {
+		padding-top: 0;
+		padding-bottom: 10px;
+	}
+	.testimonial-section .section-title-2 {
+		margin-bottom: 65px;
+	}
+
+	.info-section .info-item .icon-box {
+		max-width: 68px;
+		height: auto;
+	}
+
+	.info-section .info-item h5 {
+		line-height: 28px;
+		margin-bottom: 10px;
+	}
+
+	.info-section .info-item {
+		margin-bottom: 50px;
+	}
+	.info-section .section-title-2 {
+		margin-bottom: 58px;
+	}
+	.map-section .w-100 {
+		height: 800px !important;
+		object-fit: cover;
+	}
+	.map-section .top-bottom {
+		bottom: -2px;
+	}
+	.subscription-section {
+		padding-top: 70px;
+	}
+	.subscription-section .subscription-box input {
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 25px;
+	}
+	.subscription-section .subscription-box button {
+		margin: auto;
+	}
+	.halle-form .row {
+		margin-bottom: 0;
+	}
+
+	.halle-form input.form-control,
+	.contact-section .contact-form-box textarea.form-control,
+	.halle-form select.form-select {
+		margin-bottom: 25px;
+		max-width: 350px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.captcha-box,
+	.halle-form .form-check,
+	.halle-form .bottom-text {
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	footer {
+		padding-top: 50px;
+		padding-bottom: 45px;
+	}
+	footer p {
+		text-align: center;
+		margin-top: 60px;
+		font-size: 13px;
+	}
+}
+
+/* Small devices (large mobile) (landscape phones, 480px to 767px) */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
