@@ -9,18 +9,20 @@
 	});
 
 	// Start Isotope
-	var $grid = $(".grid").isotope({
-		// main isotope options
-		itemSelector: ".grid-item",
-		percentPosition: true,
-		// set layoutMode
-		layoutMode: "masonry",
-		// options for masonry layout mode
-		masonry: {
-			columnWidth: ".grid-sizer",
-			gutter: ".gutter-sizer",
-			fitWidth: true,
-		},
+	jQuery(window).load(function () {
+		var $grid = $(".grid").isotope({
+			// main isotope options
+			itemSelector: ".grid-item",
+			percentPosition: true,
+			// set layoutMode
+			layoutMode: "masonry",
+			// options for masonry layout mode
+			masonry: {
+				columnWidth: ".grid-sizer",
+				gutter: ".gutter-sizer",
+				// fitWidth: true,
+			},
+		});
 	});
 
 	$(".gallery-section .image")
