@@ -43,7 +43,7 @@ class SS_Contact_Form extends Widget_Base {
 	 * @return string Widget title.
 	 */
 	public function get_title() {
-		return __('Contact Form', 'ss-addons');
+		return __('SS Contact Form', 'ss-addons');
 	}
 
 	/**
@@ -56,7 +56,7 @@ class SS_Contact_Form extends Widget_Base {
 	 * @return string Widget icon.
 	 */
 	public function get_icon() {
-		return 'ss-icon';
+		return 'ss-icon eicon-form-horizontal';
 	}
 
 	/**
@@ -125,24 +125,21 @@ class SS_Contact_Form extends Widget_Base {
 
 		// layout Panel
 		$this->start_controls_section(
-			'ss_layout',
+			'ss_heading',
 			[
-				'label' => esc_html__('Design Layout', 'ss-addons'),
+				'label' => esc_html__('Content', 'ss-addons'),
 			]
 		);
 		$this->add_control(
-			'ss_design_style',
+			'ss_section_title',
 			[
-				'label' => esc_html__('Select Layout', 'ss-addons'),
-				'type' => Controls_Manager::SELECT,
-				'options' => [
-					'layout-1' => esc_html__('Layout 1', 'ss-addons'),
-					'layout-2' => esc_html__('Layout 2', 'ss-addons'),
-				],
-				'default' => 'layout-1',
+				'label' => esc_html__('Section Text', 'ss-addons'),
+				'description' => ss_get_allowed_html_desc('basic'),
+				'type' => Controls_Manager::TEXT,
+				'default' => ss_kses('Vous avez une idée d’évènement à proposer, un spectacle à monter ? Contactez nous !</b>'),
+				'label_block' => true,
 			]
 		);
-
 		$this->end_controls_section();
 
 
@@ -172,25 +169,6 @@ class SS_Contact_Form extends Widget_Base {
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
-
-		$this->add_control(
-			'text_transform',
-			[
-				'label' => __('Text Transform', 'ss-addons'),
-				'type' => Controls_Manager::SELECT,
-				'default' => '',
-				'options' => [
-					'' => __('None', 'ss-addons'),
-					'uppercase' => __('UPPERCASE', 'ss-addons'),
-					'lowercase' => __('lowercase', 'ss-addons'),
-					'capitalize' => __('Capitalize', 'ss-addons'),
-				],
-				'selectors' => [
-					'{{WRAPPER}} .title' => 'text-transform: {{VALUE}};',
-				],
-			]
-		);
-
 		$this->end_controls_section();
 	}
 
@@ -205,38 +183,81 @@ class SS_Contact_Form extends Widget_Base {
 	 */
 	protected function render() {
 		$settings = $this->get_settings_for_display();
-
+		$ss_section_text = $settings['ss_section_title'];
+		$ss_select_form = $settings['sscore_select_contact_form'];
 ?>
+		<!-- Contact Section Start -->
+		<section class="contact-section" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<?php if (!empty($ss_section_text)) : ?>
+							<p class="text-center"><?php echo ss_kses($ss_section_text); ?></p>
+						<?php endif; ?>
 
-		<?php if ($settings['ss_design_style']  == 'layout-2') : ?>
+						<?php if (!empty($ss_select_form)) : ?>
+							<?php echo do_shortcode('[contact-form-7  id="' . $ss_select_form . '"]'); ?>
+							<!-- <div class="contact-form-box halle-form">
+	<div class="row">
+		<div class="col">
+			<select class="form-select" aria-label="Default select example">
+				<option selected>Vous êtes un partenaire ?</option>
+				<option value="1">One</option>
+				<option value="2">Two</option>
+				<option value="3">Three</option>
+			</select>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="Nom*">
+		</div>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="Prénom*">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<input type="email" class="form-control" placeholder="Email*">
+		</div>
+		<div class="col-md-6">
+			<input type="text" class="form-control" placeholder="Téléphone*">
+		</div>
+	</div>
 
-			<div class="innerWrapperSidebar">
-				<div class="sidebarWidget">
-					<?php if (!empty($settings['sscore_select_contact_form'])) : ?>
-						<div class="contact__form m-0">
-							<?php echo do_shortcode('[contact-form-7  id="' . $settings['sscore_select_contact_form'] . '"]'); ?>
-						</div>
-					<?php else : ?>
-						<?php echo '<div class="alert alert-info"><p class="m-0">' . __('Please Select contact form.', 'ss-addons') . '</p></div>'; ?>
-					<?php endif; ?>
+	<div class="row">
+		<div class="col">
+			<textarea class="form-control" placeholder="Message*"></textarea>
+		</div>
+	</div>
+
+	<div class="captcha-box d-flex">
+		<div class="code">XvYZzoi</div>
+		<input type="text" class="form-control" placeholder="Retapez ce code">
+	</div>
+
+	<div class="form-check">
+		<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+		<label class="form-check-label" for="flexCheckDefault">
+			J’accepte d’être contacté(e) par FAYAT Immobilier*
+		</label>
+	</div>
+
+	<p class="bottom-text">*Champs obligatoires. Les informations collectées sont destinées à l’usage exclusif
+		de Fayat Immobilier. Pour connaître et exercer vos droits, notamment de retrait de votre consentement à
+		l’utilisation des données par ce formulaire, veuillez consulter nos mentions légales.</p>
+
+	<button type="button" class="btn button-primary">Envoyer</button>
+
+</div> -->
+						<?php endif; ?>
+					</div>
 				</div>
 			</div>
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/bottom.png" class="bottom-border" alt="">
+		</section>
+		<!-- Contact Section End -->
 
-		<?php else : ?>
-
-			<div class="contact__form">
-				<!-- Start Contact Form -->
-				<?php if (!empty($settings['sscore_select_contact_form'])) : ?>
-					<div class="form-wrapper">
-						<?php echo do_shortcode('[contact-form-7  id="' . $settings['sscore_select_contact_form'] . '"]'); ?>
-					</div>
-				<?php else : ?>
-					<?php echo '<div class="alert alert-info"><p class="m-0">' . __('Please Select contact form.', 'ss-addons') . '</p></div>'; ?>
-				<?php endif; ?>
-			</div>
-
-
-		<?php endif; ?>
 
 <?php
 	}

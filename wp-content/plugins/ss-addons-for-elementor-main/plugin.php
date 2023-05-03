@@ -145,7 +145,13 @@ class SS_Addons_Plugin {
 		return [
 			'news',
 			'gallery',
-			// 'about'
+			'about',
+			'urbanism',
+			'memory',
+			'testimonial',
+			'info-box',
+			'subscription',
+			'contact-form'
 		];
 	}
 

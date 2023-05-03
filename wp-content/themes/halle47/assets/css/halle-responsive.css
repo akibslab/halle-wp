@@ -92,7 +92,8 @@
 	.news-section .section-title {
 		max-width: 300px;
 	}
-	h2 {
+	h2,
+	h1 {
 		font-size: 45px;
 	}
 	h3 {
@@ -128,7 +129,8 @@
 		max-width: 300px;
 		width: 100%;
 	}
-	h2 {
+	h2,
+	h1 {
 		font-size: 35px;
 	}
 	h3 {
@@ -310,7 +312,8 @@
 		font-size: 17px;
 		margin-bottom: 0;
 	}
-	h2 {
+	h2,
+	h1 {
 		font-size: 30px;
 	}
 	h3 {
@@ -383,6 +386,8 @@
 	.about-section {
 		padding-top: 75px;
 		padding-bottom: 65px;
+		padding-left: 25px;
+		padding-right: 25px;
 	}
 	.about-section .section-title h2 {
 		margin-bottom: 30px;
@@ -394,6 +399,7 @@
 	}
 	.about-section .slider {
 		max-width: 350px;
+		width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 50px;
@@ -543,6 +549,9 @@
 		text-align: center;
 		margin-top: 60px;
 		font-size: 13px;
+	}
+	.gallery-section img.bottom-border {
+		bottom: -1px;
 	}
 }
 

@@ -103,7 +103,7 @@ h6 a {
 	color: inherit;
 }
 h1 {
-	font-size: 80px;
+	font-size: 60px;
 	font-weight: 700;
 	color: var(--color-black);
 }
@@ -357,6 +357,14 @@ img {
 
 .halle-form .form-check {
 	margin-bottom: 10px;
+	padding-left: 0px;
+}
+.halle-form .form-check .wpcf7-list-item {
+	margin-left: 0px;
+}
+.halle-form .form-check .wpcf7-list-item input {
+	width: 1rem;
+	height: 1rem;
 }
 
 .halle-form .form-check label {
@@ -435,7 +443,8 @@ header .logo-box img {
 	width: 100%;
 	max-width: 350px;
 }
-header h2 {
+header h2,
+header h1 {
 	margin-bottom: 17px;
 }
 header p {
@@ -759,7 +768,9 @@ header p {
 	font-size: 28px;
 	font-weight: 300;
 }
-
+.urbanism-section .left-area p {
+	line-height: 1.2;
+}
 .urbanism-section .left-area p b {
 	font-weight: 700;
 }
@@ -903,8 +914,7 @@ header p {
 	width: 100%;
 	margin: 0 auto;
 }
-
-.subscription-section .subscription-box input {
+.subscription-section .subscription-box .wpcf7-form-control-wrap {
 	width: calc(100% - 223px);
 	margin-right: 23px;
 }

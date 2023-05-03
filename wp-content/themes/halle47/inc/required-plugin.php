@@ -34,53 +34,23 @@ function halle_register_required_plugins() {
     [
       'name'     =>  esc_html__('Kirki Customizer Framework', 'halle'),
       'slug'     => 'kirki',
+      'required' => true,
+    ],
+    [
+      'name'     =>  esc_html__('Contact Form 7', 'halle'),
+      'slug'     => 'contact-form-7',
       'required' => false,
     ],
     [
-      'name'               => esc_html__('Advanced Custom Fields Pro', 'halle'),
-      'slug'               => 'advanced-custom-fields-pro',
-      'source'             => get_stylesheet_directory() . '/inc/plugins/advanced-custom-fields-pro.zip',
-      'required'           => true,
-      'force_activation'   => false,
-      'force_deactivation' => false,
-    ],
-    // [
-    //   'name'     => esc_html__('Contact Form 7', 'halle'),
-    //   'slug'     => 'contact-form-7',
-    //   'required' => false,
-    // ],
-    // [
-    //   'name'     => esc_html__('One Click Demo Import', 'halle'),
-    //   'slug'     => 'one-click-demo-import',
-    //   'required' => false,
-    // ],
-    // [
-    //   'name'     => esc_html__('Mailchimp For WP', 'halle'),
-    //   'slug'     => 'mailchimp-for-wp',
-    //   'required' => false,
-    // ],
-    array(
-      'name'     =>  esc_html__('Breadcrumb NavXT', 'halle'),
-      'slug'     => 'breadcrumb-navxt',
+      'name'     =>  esc_html__('Elementor Website Builder', 'halle'),
+      'slug'     => 'elementor',
       'required' => false,
-    ),
-
-    // [
-    //   'name'         => esc_html__('Advanced Custom Fields Pro', 'halle'),
-    //   'slug'         => 'advanced-custom-fields-pro',
-    //   'source'       => esc_url('https://themepure.net/wp/dustrilox/source/advanced-custom-fields-pro.zip'),
-    //   'required'     => true,
-    //   'external_url' => esc_url('https://themepure.net/wp/dustrilox/source/advanced-custom-fields-pro.zip'),
-    // ],
-    // // This is an example of how to include a plugin bundled with a theme.
-    // array(
-    //   'name'               => esc_html__( 'Advanced Custom Fields Pro', 'halle' ),
-    //   'slug'               => 'advanced-custom-fields-pro',
-    //   'source'             => get_stylesheet_directory() . '/inc/plugins/advanced-custom-fields-pro.zip',
-    //   'required'           => true,
-    //   'force_activation'   => false,
-    //   'force_deactivation' => false,
-    // ),
+    ],
+    [
+      'name'     =>  esc_html__('Really Simple CAPTCHA', 'halle'),
+      'slug'     => 'really-simple-captcha',
+      'required' => false,
+    ],
 
   ];
   $config = [

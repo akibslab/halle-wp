@@ -117,7 +117,7 @@ class SS_About extends Widget_Base {
                 'label' => esc_html__('Section Title', 'ss-addons'),
                 'description' => ss_get_allowed_html_desc('basic'),
                 'type' => Controls_Manager::TEXT,
-                'default' => 'La Halle 47, <br><b>Tout un programme !</b>',
+                'default' => ss_kses('La Halle 47, <br><b>Tout un programme !</b>'),
                 'label_block' => true,
             ]
         );
@@ -127,7 +127,28 @@ class SS_About extends Widget_Base {
                 'label' => esc_html__('Section Description', 'ss-addons'),
                 'description' => ss_get_allowed_html_desc('basic'),
                 'type' => Controls_Manager::WYSIWYG,
-                'default' => esc_html__('La Halle 47, <br><b>Tout un programme !</b>', 'ss-addons'),
+                'default' => ss_kses('En préfiguration du réaménagement du quartier Souys à Floirac, au coeur de la
+                métropole bordelaise, un ambitieux projet d’urbanisme transitoire se met en place.
+                Le quartier réaménagé par l’EPA Euratlantique, conservera les traces singulières
+                de son passé industriel et en particulier une immense nef centenaire en structure
+                béton, désormais baptisée La Halle 47. <br><br>
+  
+                Avant sa réhabilitation programmée à compter de 2026, cette halle accueillera
+                pendant 3 saisons des évènements culturels ou d’échanges développés par des
+                porteurs de projet aux cotés de Fayat Immobilier, propriétaire du site. <br><br>
+  
+                Ouverte à des thématiques variées et pluridisciplinaires, La Halle 47 accueillera
+                des évènements remarquables et fédérateurs, préfigurant la programmation
+                définitive. Dès juin 2023, un Opéra immersif sera organisé dans le cadre du
+                festival Pulsations, porté par Pygmalion. Un festival de Street Art, des brocantes,
+                une programmation de cinéma de plein air sont également en développement.
+                Ces expériences donneront lieu à de riches rencontres au cours desquelles une
+                multitude d’acteurs pourront échanger et partager : artistes, public métropolitain,
+                riverains, réseaux associatifs… <br><br>
+  
+                Opérateur incontournable d’une transition urbaine harmonieuse et responsable,
+                Fayat Immobilier réaffirme par ce projet sa volonté de réinvestir et de sublimer le
+                patrimoine industriel de la métropole bordelaise.'),
                 'label_block' => true,
                 'rows' => 10,
             ]
@@ -159,7 +180,7 @@ class SS_About extends Widget_Base {
         $this->add_control(
             'ss_about_sliders',
             [
-                'label' => esc_html__('Sliders', 'ss-addons'),
+                'label' => esc_html__('About Sliders', 'ss-addons'),
                 'type' => \Elementor\Controls_Manager::REPEATER,
                 'fields' => $repeater->get_controls(),
                 'default' => [
@@ -169,7 +190,6 @@ class SS_About extends Widget_Base {
                         ],
                     ],
                 ],
-                'title_field' => '{{{ ss_features_title }}}',
             ]
         );
         $this->end_controls_section();
@@ -220,13 +240,13 @@ class SS_About extends Widget_Base {
                                     <div id="carouselExampleCaptions" class="carousel slide">
                                         <div class="carousel-indicators">
                                             <?php foreach ($ss_about_sliders as $key => $slider) : ?>
-                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo $key; ?>" class="<?php ($key == 0) ? 'active' : ''; ?>" aria-label="Slide <?php echo $key + 1; ?>"></button>
+                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo $key; ?>" class="<?php echo ($key == 0) ? 'active' : ''; ?>" aria-label="Slide <?php echo $key + 1; ?>"></button>
                                             <?php endforeach; ?>
                                         </div>
                                         <div class="carousel-inner">
                                             <?php foreach ($ss_about_sliders as $key => $slider) : ?>
-                                                <div class="carousel-item <?php ($key == 0) ? 'active' : ''; ?>">
-                                                    <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="...">
+                                                <div class="carousel-item <?php echo ($key == 0) ? 'active' : ''; ?>">
+                                                    <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="">
                                                 </div>
                                             <?php endforeach; ?>
                                         </div>

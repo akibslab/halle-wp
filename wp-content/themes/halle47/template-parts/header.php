@@ -70,7 +70,7 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
           </div>
 
           <?php if (!empty($header_tagline)) : ?>
-            <h2><?php echo esc_html($header_tagline); ?></h2>
+            <h1><?php echo esc_html($header_tagline); ?></h1>
           <?php endif;
           if (!empty($header_tagline)) : ?>
             <p><?php echo esc_html($header_description); ?></p>
