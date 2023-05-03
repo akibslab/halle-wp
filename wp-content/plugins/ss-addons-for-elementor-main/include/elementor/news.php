@@ -150,7 +150,7 @@ class SS_News extends Widget_Base {
         'label' => esc_html__('Title', 'ss-addons'),
         'description' => ss_get_allowed_html_desc('basic'),
         'type' => \Elementor\Controls_Manager::TEXT,
-        'default' => esc_html__('News Title', 'ss-addons'),
+        'default' => ss_kses('News Title'),
         'label_block' => true,
       ]
     );
@@ -160,7 +160,7 @@ class SS_News extends Widget_Base {
         'label' => esc_html__('Excerpt', 'ss-addons'),
         'description' => ss_get_allowed_html_desc('basic'),
         'type' => \Elementor\Controls_Manager::TEXTAREA,
-        'default' => esc_html__('News Excerpt', 'ss-addons'),
+        'default' => ss_kses('News Excerpt'),
         'label_block' => true,
       ]
     );
@@ -195,42 +195,42 @@ class SS_News extends Widget_Base {
         'default' => [
           [
             'ss_news_title' => esc_html__('Euripides Laskaridis', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Elenit - 12>15.04.2023 <br> #théâtre #danse #performance', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Elenit - 12>15.04.2023 <br> #théâtre #danse #performance'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/1.jpg',
             ],
           ],
           [
             'ss_news_title' => esc_html__('Pulsations', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Festival Pulsations - Jusqu’au 21.05.2023 <br> #exposition #pulsations', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Festival Pulsations - Jusqu’au 21.05.2023 <br> #exposition #pulsations'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/2.jpg',
             ],
           ],
           [
             'ss_news_title' => esc_html__('Circulation(s) 2023', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Festival de la jeune photographie européenne - Jusqu’au 21.05.2023 <br> #exposition #photographie', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Festival de la jeune photographie européenne - Jusqu’au 21.05.2023 <br> #exposition #photographie'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/3.jpg',
             ],
           ],
           [
             'ss_news_title' => esc_html__('Circulation(s) 2023', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Festival de la jeune photographie européenne - Jusqu’au 21.05.2023 <br> #exposition #photographie', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Festival de la jeune photographie européenne - Jusqu’au 21.05.2023 <br> #exposition #photographie'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/4.jpg',
             ],
           ],
           [
             'ss_news_title' => esc_html__('Appel à opérateur', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Lorem I-sum dolor sit met- Jusqu’au 21.05.2023 <br> #exposition #photographie', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Lorem I-sum dolor sit met- Jusqu’au 21.05.2023 <br> #exposition #photographie'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/5.jpg',
             ],
           ],
           [
             'ss_news_title' => esc_html__('Euripides Laskaridis', 'ss-addons'),
-            'ss_news_excerpt' => esc_html__('Elenit - 12>15.04.2023 <br>#théâtre #danse #performance', 'ss-addons'),
+            'ss_news_excerpt' => ss_kses('Elenit - 12>15.04.2023 <br>#théâtre #danse #performance'),
             'ss_news_image' => [
               'url' => get_template_directory_uri() . '/assets/img/news/6.jpg',
             ],

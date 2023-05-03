@@ -169,7 +169,7 @@ class SS_Info_Box extends Widget_Base {
                 'label' => esc_html__('Description', 'ss-addons'),
                 'description' => ss_get_allowed_html_desc('basic'),
                 'type' => \Elementor\Controls_Manager::TEXTAREA,
-                'default' => esc_html__('Info Description', 'ss-addons'),
+                'default' => ss_kses('Info Description'),
                 'label_block' => true,
             ]
         );
@@ -183,22 +183,22 @@ class SS_Info_Box extends Widget_Base {
                 'default' => [
                     [
                         'info_title' => esc_html__('Venir en Voiture', 'ss-addons'),
-                        'info_description' => esc_html__('Sed consequat orci ante, vitae imperdiet neque suscipit a. Nunc mattis purus at tincidunt porta. Vivamus
-                        posuere tellus venenatis', 'ss-addons'),
+                        'info_description' => ss_kses('Sed consequat orci ante, vitae imperdiet neque suscipit a. Nunc mattis purus at tincidunt porta. Vivamus
+                        posuere tellus venenatis'),
                         'info_image' => [
                             'url' => get_template_directory_uri() . '/assets/img/info/car.png',
                         ],
                     ],
                     [
                         'info_title' => esc_html__('Venir en bus', 'ss-addons'),
-                        'info_description' => esc_html__('Sed eleifend diam sit amet lacus sollicitudin accumsan. Duis ut varius elit. Integer justo ante, eleifend', 'ss-addons'),
+                        'info_description' => ss_kses('Sed eleifend diam sit amet lacus sollicitudin accumsan. Duis ut varius elit. Integer justo ante, eleifend'),
                         'info_image' => [
                             'url' => get_template_directory_uri() . '/assets/img/info/rail.png',
                         ],
                     ],
                     [
                         'info_title' => esc_html__('Venir à pieds', 'ss-addons'),
-                        'info_description' => esc_html__('par la promenade des berges <br> de la Garonne', 'ss-addons'),
+                        'info_description' => ss_kses('par la promenade des berges <br> de la Garonne'),
                         'info_image' => [
                             'url' => get_template_directory_uri() . '/assets/img/info/foot.png',
                         ],
