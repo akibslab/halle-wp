@@ -333,7 +333,7 @@ class SS_News extends Widget_Base {
                         <h3><?php echo esc_html($news['ss_news_title']) ?></h3>
                       <?php endif;
                       if (!empty($news['ss_news_excerpt'])) : ?>
-                        <p><?php echo esc_html($news['ss_news_excerpt']) ?></p>
+                        <p><?php echo ss_kses($news['ss_news_excerpt']); ?></p>
                       <?php endif; ?>
                     </div>
                   </div>
@@ -358,7 +358,7 @@ class SS_News extends Widget_Base {
                           <h3><?php echo esc_html($news['ss_news_title']) ?></h3>
                         <?php endif;
                         if (!empty($news['ss_news_excerpt'])) : ?>
-                          <p><?php echo esc_html($news['ss_news_excerpt']) ?></p>
+                          <p><?php echo ss_kses($news['ss_news_excerpt']); ?></p>
                         <?php endif; ?>
                       </div>
                     </div>

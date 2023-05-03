@@ -264,7 +264,7 @@ class SS_Info_Box extends Widget_Base {
                                         <h5><?php echo ss_kses($box['info_title']); ?></h5>
                                     <?php endif;
                                     if (!empty($box['info_description'])) : ?>
-                                        <p><?php echo ss_kses($box['info_description']); ?></p>
+                                        <p><?php echo $box['info_description']; ?></p>
                                     <?php endif; ?>
                                 </div>
                             </div>
