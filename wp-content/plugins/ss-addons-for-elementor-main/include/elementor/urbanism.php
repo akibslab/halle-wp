@@ -127,8 +127,8 @@ class SS_Urbanism extends Widget_Base {
         'label' => esc_html__('Section Description', 'ss-addons'),
         'description' => ss_get_allowed_html_desc('basic'),
         'type' => Controls_Manager::WYSIWYG,
-        'default' => ss_kses('<b>Préfigurer le projet</b><br>
-        urbain, activer le quartier<br><br>
+        'default' => ss_kses('<b>Préfigurer le projet<br>
+        urbain,</b> activer le quartier<br><br>
 
         <b>Communiquer sur le projet urbain,</b>
         obtenir l’adhésion des riverains<br><br>
@@ -249,10 +249,10 @@ class SS_Urbanism extends Widget_Base {
           <div class="col-lg-7">
             <div class="right-area">
               <?php if (!empty($urbanism_desktop_img)) : ?>
-                <img class="desktop d-none d-lg-block" src="<?php echo esc_url($urbanism_desktop_img['url']); ?>" alt="">
+                <img class="desktop d-none d-lg-block" src="<?php echo esc_url($urbanism_desktop_img['url']); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
               <?php endif;
               if (!empty($urbanism_mobile_img)) : ?>
-                <img class="mobile d-lg-none" src="<?php echo esc_url($urbanism_mobile_img['url']); ?>" alt="">
+                <img class="mobile d-lg-none" src="<?php echo esc_url($urbanism_mobile_img['url']); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
               <?php endif; ?>
             </div>
           </div>

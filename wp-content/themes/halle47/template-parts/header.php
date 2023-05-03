@@ -48,7 +48,7 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
 
             <?php if (!empty($header_right_contact_text)) : ?>
               <div class="navigation_right_btn">
-                <a href="<?php echo esc_url($header_right_contact_link); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact-icon.png" alt=""><?php echo esc_html($header_right_contact_text); ?></a>
+                <a href="<?php echo esc_url($header_right_contact_link); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/contact-icon.png" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"><?php echo esc_html($header_right_contact_text); ?></a>
               </div>
             <?php endif; ?>
           </div>
@@ -63,7 +63,7 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
       <div class="row">
         <div class="col-md-12">
           <div class="logo-box">
-            <a href="javascript:void(0)" class="mobile_bar d-lg-none"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/menu-bar.png'); ?>" alt="<?php echo esc_attr('menubar'); ?>"></a>
+            <a href="javascript:void(0)" class="mobile_bar d-lg-none"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/menu-bar.png'); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
 
             <?php halle_header_logo(); ?>
 
@@ -82,11 +82,11 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
 </header>
 <div class="mobile_menu d-lg-none">
   <div class="mobile_menu_top">
-    <a href="javascript:void(0)" class="mobile_cross"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cross.png" alt=""></a>
+    <a href="javascript:void(0)" class="mobile_cross"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/cross.png" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
     <div class="logo_and_contact">
-      <a class="mobile_logo" href="<?php print esc_url(home_url('/')); ?>"><img src="<?php echo esc_url($mobile_main_logo); ?>" alt="<?php print esc_attr__('Mobile logo', 'halle'); ?>"></a>
+      <a class="mobile_logo" href="<?php print esc_url(home_url('/')); ?>"><img src="<?php echo esc_url($mobile_main_logo); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
       <?php if (!empty($header_right_contact_text)) : ?>
-        <a class="mobile_contact" href="<?php echo esc_url($header_right_contact_link); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/mobile-contact.png" alt=""><?php echo esc_html($header_right_contact_text); ?></a>
+        <a class="mobile_contact" href="<?php echo esc_url($header_right_contact_link); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/mobile-contact.png" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"><?php echo esc_html($header_right_contact_text); ?></a>
       <?php endif; ?>
     </div>
   </div>
@@ -97,7 +97,7 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
   </div>
   <div class="mobile_menu_bottom">
     <div class="mobile_menu_bottom_logo">
-      <a href="javascript:void(0)"><img src="<?php echo esc_url($mobile_bottomLogo); ?>" alt="<?php print esc_attr__('Mobile Bottom Logo', 'halle'); ?>"></a>
+      <a href="javascript:void(0)"><img src="<?php echo esc_url($mobile_bottomLogo); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
     </div>
     <?php if (!empty($header_mobile_bottom_text)) : ?>
       <p class="mobile_menu_bottom_text">

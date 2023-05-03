@@ -303,6 +303,7 @@
 	}
 	.mobile_menu {
 		max-width: 100%;
+		width: 100%;
 		padding: 45px;
 	}
 	.mobile_menu .mobile_menu_top {

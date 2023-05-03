@@ -25,7 +25,7 @@ $footer_column = get_theme_mod('footer_widget_column', 4);
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-2 offset-lg-4 col-xl-2 offset-xl-5 text-center">
-        <img src="<?php echo esc_url($footer_logo); ?>" alt="<?php echo esc_attr('footer logo'); ?>">
+        <img src="<?php echo esc_url($footer_logo); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
       </div>
       <div class="col-lg-6 col-xl-5">
         <?php if (!empty($footer_text)) : ?>

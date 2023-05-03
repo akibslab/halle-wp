@@ -192,12 +192,12 @@ class SS_Gallery extends Widget_Base {
     <!-- Gallery Section Start -->
     <section class="gallery-section" id="gallery">
       <?php if (!empty($ss_desktop_default)) : ?>
-        <img class="image d-none d-md-block" src="<?php echo esc_url($ss_desktop_default['url']); ?>" data-src="<?php echo esc_url($ss_desktop_default['url']); ?>" data-hover="<?php echo esc_url($ss_desktop_hover['url']); ?>" alt="">
+        <img class="image d-none d-md-block" src="<?php echo esc_url($ss_desktop_default['url']); ?>" data-src="<?php echo esc_url($ss_desktop_default['url']); ?>" data-hover="<?php echo esc_url($ss_desktop_hover['url']); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
       <?php endif;
       if (!empty($ss_mobile_default)) : ?>
-        <img class="image d-md-none" src="<?php echo esc_url($ss_mobile_default['url']); ?>" data-src="<?php echo esc_url($ss_mobile_default['url']); ?>" data-hover="<?php echo esc_url($ss_mobile_hover['url']); ?>" alt="">
+        <img class="image d-md-none" src="<?php echo esc_url($ss_mobile_default['url']); ?>" data-src="<?php echo esc_url($ss_mobile_default['url']); ?>" data-hover="<?php echo esc_url($ss_mobile_hover['url']); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
       <?php endif; ?>
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/bottom.png" class="bottom-border" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/bottom.png" class="bottom-border" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
     </section>
     <!-- Gallery Section End -->
 

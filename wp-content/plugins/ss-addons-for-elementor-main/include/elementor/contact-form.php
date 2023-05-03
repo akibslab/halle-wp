@@ -254,7 +254,7 @@ class SS_Contact_Form extends Widget_Base {
 					</div>
 				</div>
 			</div>
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/bottom.png" class="bottom-border" alt="">
+			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/contact/bottom.png" class="bottom-border" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
 		</section>
 		<!-- Contact Section End -->
 

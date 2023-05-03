@@ -243,7 +243,7 @@ class SS_Memory extends Widget_Base {
             <div class="carousel-inner">
               <?php foreach ($ss_memory_sliders as $key => $slider) : ?>
                 <div class="carousel-item <?php echo ($key == 0) ? 'active' : ''; ?>">
-                  <img src="<?php echo esc_url($slider['memory_slider_img']['url']); ?>" class="d-block w-100" alt="...">
+                  <img src="<?php echo esc_url($slider['memory_slider_img']['url']); ?>" class="d-block w-100" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
                 </div>
               <?php endforeach; ?>
             </div>

@@ -223,7 +223,7 @@ class SS_About extends Widget_Base {
 ?>
 
         <!-- About Section Start -->
-        <section class="about-section" id="about">
+        <section class="about-section overflow-hidden" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 align-self-lg-end">
@@ -246,7 +246,7 @@ class SS_About extends Widget_Base {
                                         <div class="carousel-inner">
                                             <?php foreach ($ss_about_sliders as $key => $slider) : ?>
                                                 <div class="carousel-item <?php echo ($key == 0) ? 'active' : ''; ?>">
-                                                    <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="">
+                                                    <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
                                                 </div>
                                             <?php endforeach; ?>
                                         </div>

@@ -123,7 +123,7 @@ class SS_Info_Box extends Widget_Base {
                 'label' => esc_html__('Section Title', 'ss-addons'),
                 'description' => ss_get_allowed_html_desc('basic'),
                 'type' => Controls_Manager::TEXT,
-                'default' => ss_kses('Et demain ?'),
+                'default' => ss_kses('Comment venir ?'),
                 'label_block' => true,
             ]
         );
@@ -257,7 +257,7 @@ class SS_Info_Box extends Widget_Base {
                                 <div class="info-item">
                                     <?php if (!empty($box['info_image'])) : ?>
                                         <div class="icon-box d-flex align-items-center">
-                                            <img src="<?php echo esc_url($box['info_image']['url']); ?>" alt="">
+                                            <img src="<?php echo esc_url($box['info_image']['url']); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
                                         </div>
                                     <?php endif;
                                     if (!empty($box['info_title'])) : ?>

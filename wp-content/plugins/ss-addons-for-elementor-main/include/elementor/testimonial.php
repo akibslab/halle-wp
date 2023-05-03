@@ -196,7 +196,7 @@ class SS_Testimonial extends Widget_Base {
 
         <!-- Testimonial Section Start -->
         <section class="testimonial-section overflow-hidden" id="testimonial">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/bottom.png" class="top-border" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gallery/bottom.png" class="top-border" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
             <div class="container-fluid container-md gx-0 gx-md-4">
                 <div class="row">
                     <div class="col-md-12">
@@ -217,8 +217,8 @@ class SS_Testimonial extends Widget_Base {
                                 </p>
                             <?php endif; ?>
 
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/quote-1.png" class="quote-1" alt="">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/quote-2.png" class="quote-2" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/quote-1.png" class="quote-1" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonial/quote-2.png" class="quote-2" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
                         </div>
                     </div>
                 </div>

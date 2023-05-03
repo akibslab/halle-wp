@@ -304,7 +304,7 @@ class SS_News extends Widget_Base {
 
     <!-- News Section Start -->
     <section class="news-section" id="news">
-      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/top.png" class="top-border" alt="">
+      <img src="<?php echo get_template_directory_uri(); ?>/assets/img/news/top.png" class="top-border" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
