@@ -288,6 +288,21 @@
 		max-width: 350px;
 		margin-left: auto;
 		margin-right: auto;
+		position: relative;
+	}
+	.site-header .logo-box .mobile_bar.bar-2 {
+		margin-right: 0;
+		position: fixed;
+		left: 45px;
+		top: 45px;
+		transform: translateX(-100%);
+		visibility: hidden;
+		opacity: 0;
+	}
+	.site-header .logo-box .mobile_bar.bar-2.sticky {
+		visibility: visible;
+		opacity: 1;
+		transform: translateX(0);
 	}
 	.site-header .logo-box .mobile_bar {
 		display: inline-block;

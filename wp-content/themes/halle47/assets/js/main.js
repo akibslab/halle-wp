@@ -8,6 +8,15 @@
 		$(".mobile_menu").removeClass("open");
 	});
 
+	$(window).on("scroll", function () {
+		var scroll = $(window).scrollTop();
+		if (scroll < 250) {
+			$(".site-header .logo-box .mobile_bar.bar-2").removeClass("sticky");
+		} else {
+			$(".site-header .logo-box .mobile_bar.bar-2").addClass("sticky");
+		}
+	});
+
 	// Start Isotope
 	jQuery(window).load(function () {
 		var $grid = $(".grid").isotope({
