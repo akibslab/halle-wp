@@ -7,6 +7,12 @@
 	$(".mobile_menu .mobile_menu_top .mobile_cross").on("click", function () {
 		$(".mobile_menu").removeClass("open");
 	});
+	$(".mobile_menu .mobile_menu_top .mobile_contact").on("click", function () {
+		$(".mobile_menu").removeClass("open");
+	});
+	$(".mobile_menu ul li.menu-item a").on("click", function () {
+		$(".mobile_menu").removeClass("open");
+	});
 
 	$(window).on("scroll", function () {
 		var scroll = $(window).scrollTop();
@@ -34,72 +40,71 @@
 		});
 	}
 
-
 	function aboutCarouselActive() {
-		$('.about-carousel').owlCarousel({
-		    loop:false,
-		    margin:10,
-		    nav:false,
-		    dots:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    }
+		$(".about-carousel").owlCarousel({
+			loop: false,
+			margin: 10,
+			nav: false,
+			dots: true,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 1,
+				},
+				1000: {
+					items: 1,
+				},
+			},
 		});
 
 		lightbox.option({
-	      'resizeDuration': 200,
-	      'wrapAround': true
-	    })
+			resizeDuration: 200,
+			wrapAround: true,
+		});
 	}
 
 	function memoryCarouselActive() {
-		$('.memory-carousel').owlCarousel({
-		    loop:false,
-		    margin:10,
-		    nav:false,
-		    dots:true,
-		    responsive:{
-		        0:{
-		            items:1
-		        },
-		        600:{
-		            items:1
-		        },
-		        1000:{
-		            items:1
-		        }
-		    }
-		})
+		$(".memory-carousel").owlCarousel({
+			loop: false,
+			margin: 10,
+			nav: false,
+			dots: true,
+			responsive: {
+				0: {
+					items: 1,
+				},
+				600: {
+					items: 1,
+				},
+				1000: {
+					items: 1,
+				},
+			},
+		});
 	}
 
 	$(window).on("elementor/frontend/init", function () {
 		elementorFrontend.hooks.addAction(
-			"frontend/element_ready/news.default",isotopeActive
+			"frontend/element_ready/news.default",
+			isotopeActive
 		);
 		elementorFrontend.hooks.addAction(
-			"frontend/element_ready/about.default",aboutCarouselActive
+			"frontend/element_ready/about.default",
+			aboutCarouselActive
 		);
 		elementorFrontend.hooks.addAction(
-			"frontend/element_ready/memory.default",memoryCarouselActive
+			"frontend/element_ready/memory.default",
+			memoryCarouselActive
 		);
 	});
-		
-	
 
 	$(".gallery-section .image")
-	.mouseover(function () {
-		$(this).attr("src", $(this).data("hover"));
-	})
-	.mouseout(function () {
-		$(this).attr("src", $(this).data("src"));
-	});
-
+		.mouseover(function () {
+			$(this).attr("src", $(this).data("hover"));
+		})
+		.mouseout(function () {
+			$(this).attr("src", $(this).data("src"));
+		});
 })(jQuery);

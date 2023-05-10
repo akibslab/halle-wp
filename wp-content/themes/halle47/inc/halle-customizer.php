@@ -86,13 +86,6 @@ function halle_customizer_panels_sections($wp_customize) {
     'capability'  => 'edit_theme_options',
     'panel'       => 'halle_customizer',
   ]);
-  $wp_customize->add_section('typo_setting', [
-    'title'       => esc_html__('Typography Setting', 'halle'),
-    'description' => '',
-    'priority'    => 21,
-    'capability'  => 'edit_theme_options',
-    'panel'       => 'halle_customizer',
-  ]);
 }
 add_action('customize_register', 'halle_customizer_panels_sections');
 
@@ -544,6 +537,84 @@ function _footer_setting_fields($fields) {
     'priority' => 10,
   ];
 
+  // heder socials
+  $fields[] = [
+    'type'     => 'switch',
+    'settings' => 'footer_socials_switcher',
+    'label'    => esc_html__('Footer Socials', 'halle'),
+    'description'    => esc_html__('Show footer socials.', 'halle'),
+    'section'  => 'footer_setting',
+    'default'  => '1',
+    'priority' => 10,
+    'choices'  => [
+      'on'  => esc_html__('Enable', 'halle'),
+      'off' => esc_html__('Disable', 'halle'),
+    ],
+  ];
+  // facebook
+  $fields[] = [
+    'type'     => 'text',
+    'settings' => 'footer_fb_link',
+    'label'    => esc_html__('Facebook Link', 'halle'),
+    'section'  => 'footer_setting',
+    'default'  => esc_html__('https://facebook.com/', 'halle'),
+    'priority' => 10,
+    'active_callback' => [
+      [
+        'setting'  => 'footer_socials_switcher',
+        'operator' => '==',
+        'value'    => true,
+      ],
+    ],
+  ];
+  // instagram
+  $fields[] = [
+    'type'     => 'text',
+    'settings' => 'footer_ig_link',
+    'label'    => esc_html__('Instagram Link', 'halle'),
+    'section'  => 'footer_setting',
+    'default'  => esc_html__('https://instagram.com/', 'halle'),
+    'priority' => 10,
+    'active_callback' => [
+      [
+        'setting'  => 'footer_socials_switcher',
+        'operator' => '==',
+        'value'    => true,
+      ],
+    ],
+  ];
+  // linkedin
+  $fields[] = [
+    'type'     => 'text',
+    'settings' => 'footer_linkedin_link',
+    'label'    => esc_html__('Linkedin Link', 'halle'),
+    'section'  => 'footer_setting',
+    'default'  => esc_html__('https://linkedin.com/', 'halle'),
+    'priority' => 10,
+    'active_callback' => [
+      [
+        'setting'  => 'footer_socials_switcher',
+        'operator' => '==',
+        'value'    => true,
+      ],
+    ],
+  ];
+  // youtube
+  $fields[] = [
+    'type'     => 'text',
+    'settings' => 'footer_youtube_link',
+    'label'    => esc_html__('Youtube Link', 'halle'),
+    'section'  => 'footer_setting',
+    'default'  => esc_html__('https://youtube.com/', 'halle'),
+    'priority' => 10,
+    'active_callback' => [
+      [
+        'setting'  => 'footer_socials_switcher',
+        'operator' => '==',
+        'value'    => true,
+      ],
+    ],
+  ];
   return $fields;
 }
 add_filter('kirki/fields', '_footer_setting_fields');

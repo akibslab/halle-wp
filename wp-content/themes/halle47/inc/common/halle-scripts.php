@@ -17,6 +17,7 @@ function halle_scripts() {
     } else {
         wp_enqueue_style('bootstrap', STARTER_THEME_CSS_DIR . 'bootstrap.min.css', []);
     }
+    wp_enqueue_style('font-awesome-pro', STARTER_THEME_CSS_DIR . 'font-awesome-pro.css', []);
     wp_enqueue_style('owl-carousel', STARTER_THEME_CSS_DIR . 'owl.carousel.min.css', []);
     wp_enqueue_style('lightbox', STARTER_THEME_CSS_DIR . 'lightbox.min.css', []);
     wp_enqueue_style('halle-core', STARTER_THEME_CSS_DIR . 'halle-core.css', []);

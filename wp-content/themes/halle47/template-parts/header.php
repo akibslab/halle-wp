@@ -64,7 +64,7 @@ $header_mobile_bottom_text = get_theme_mod('header_mobile_bottom_text', __(' Adr
         <div class="col-md-12">
           <div class="logo-box">
             <a href="javascript:void(0)" class="mobile_bar d-lg-none"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/menu-bar.png'); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
-            <a href="javascript:void(0)" class="mobile_bar bar-2 d-lg-none"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/menu-bar.png'); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
+            <a href="javascript:void(0)" class="mobile_bar bar-2 d-md-none"><img src="<?php echo esc_url(get_template_directory_uri() . '/assets/img/icons/menu-bar.png'); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier"></a>
 
             <?php halle_header_logo(); ?>
 

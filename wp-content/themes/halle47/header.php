@@ -21,6 +21,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <?php wp_head(); ?>
+
+
+    <!-- SOCIAL MEDIA META DATA -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Événements Culturels à Floirac - Bordeaux | HALLE 47" />
+    <meta property="og:url" content="www.halle47.fr>" />
+    <meta property="og:title" content="Événements Culturels à Floirac - Bordeaux | HALLE 47" />
+    <meta property="og:description" content="Événements Culturels à Floirac - Bordeaux | HALLE 47" />
+    <meta property="og:image" content="<?php echo home_url('/'); ?>images/img-post-facebook.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta property="article:tag" content="immobilier" />
+    <meta property="article:tag" content="appartement" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="Événements Culturels à Floirac - Bordeaux | HALLE 47" />
+    <meta name="twitter:title" content="Événements Culturels à Floirac - Bordeaux | HALLE 47" />
+    <meta name="twitter:site" content="@www.halle47.fr" />
+    <meta name="twitter:image" content="<?php echo home_url('/'); ?>images/img-post-twitter.jpg" />
+
+    <!-- POUR BING -->
+    <meta name="msnbot" content="Le nouveau lieu culturel qui va dynamiser le sud-est de Bordeaux. Manifestations et événement culturels, concerts, performances, échanges, conférences… Soyez prêt.e.s">
+    <meta name="bingbot" content="Le nouveau lieu culturel qui va dynamiser le sud-est de Bordeaux. Manifestations et événement culturels, concerts, performances, échanges, conférences… Soyez prêt.e.s">
+
+    <!-- Schema.org markup for Google -->
+    <meta itemprop="name" content="Événements Culturels à Floirac - Bordeaux | HALLE 47">
+    <meta itemprop="description" content="Le nouveau lieu culturel qui va dynamiser le sud-est de Bordeaux. Manifestations et événement culturels, concerts, performances, échanges, conférences… Soyez prêt.e.s">
+    <meta itemprop="image" content="<?php echo home_url('/'); ?>images/icone-apple-touch.jpg">
+
+    <!-- MICRO DATA -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "HALLE 47",
+            "url": "www.halle47.fr",
+            "logo": "<?php echo home_url('/'); ?>images/img-post-twitter.jpg"
+        } {
+            "@context": "http://schema.org",
+            "@type": "Product",
+            "name": "Événements Culturels à Floirac - Bordeaux | HALLE 47",
+            "image": "<?php echo home_url('/'); ?>images/img-post-facebook.jpg",
+            "description": "Le nouveau lieu culturel qui va dynamiser le sud-est de Bordeaux. Manifestations et événement culturels, concerts, performances, échanges, conférences… Soyez prêt.e.s"
+        }
+    </script>
 </head>
 
 <body <?php body_class(); ?>>

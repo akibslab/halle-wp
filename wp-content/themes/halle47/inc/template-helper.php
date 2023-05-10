@@ -142,50 +142,22 @@ function halle_header_socials() {
 
 function halle_footer_socials() {
     $halle_footer_fb_link = get_theme_mod('footer_fb_link', __('#', 'halle'));
-    $halle_footer_twitter_link = get_theme_mod('footer_twitter_link', __('#', 'halle'));
-    $halle_footer_instagram_link = get_theme_mod('footer_instagram_link', __('#', 'halle'));
+    $halle_footer_instagram_link = get_theme_mod('footer_ig_link', __('#', 'halle'));
     $halle_footer_linkedin_link = get_theme_mod('footer_linkedin_link', __('#', 'halle'));
     $halle_footer_youtube_link = get_theme_mod('footer_youtube_link', __('#', 'halle'));
     ?>
     <ul>
-        <?php if (!empty($halle_footer_fb_link)) : ?>
-            <li>
-                <a href="<?php print esc_url($halle_footer_fb_link); ?>">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-            </li>
-        <?php endif; ?>
-
-        <?php if (!empty($halle_footer_twitter_link)) : ?>
-            <li>
-                <a href="<?php print esc_url($halle_footer_twitter_link); ?>">
-                    <i class="fab fa-twitter"></i>
-                </a>
-            </li>
-        <?php endif; ?>
-
-        <?php if (!empty($halle_footer_instagram_link)) : ?>
-            <li>
-                <a href="<?php print esc_url($halle_footer_instagram_link); ?>">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-        <?php endif; ?>
-
         <?php if (!empty($halle_footer_linkedin_link)) : ?>
-            <li>
-                <a href="<?php print esc_url($halle_footer_linkedin_link); ?>">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
+            <li><a href="<?php echo esc_url($halle_footer_linkedin_link); ?>" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
         <?php endif; ?>
-
+        <?php if (!empty($halle_footer_fb_link)) : ?>
+            <li><a href="<?php echo esc_url($halle_footer_fb_link); ?>" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+        <?php endif; ?>
+        <?php if (!empty($halle_footer_instagram_link)) : ?>
+            <li><a href="<?php echo esc_url($halle_footer_instagram_link); ?>" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        <?php endif; ?>
         <?php if (!empty($halle_footer_youtube_link)) : ?>
-            <li>
-                <a href="<?php print esc_url($halle_footer_youtube_link); ?>">
-                    <i class="fab fa-youtube"></i>
-                </a>
-            </li>
+            <li><a href="<?php echo esc_url($halle_footer_youtube_link); ?>" target="_blank"><i class="fab fa-youtube"></i></a></li>
         <?php endif; ?>
     </ul>
 <?php

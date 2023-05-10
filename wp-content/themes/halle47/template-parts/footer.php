@@ -19,12 +19,21 @@ $footer_text = get_theme_mod('footer_text', __('<a href="#">Adresse</a> / <a hre
 $footer_column = 0;
 $footer_column = get_theme_mod('footer_widget_column', 4);
 
+$footer_socials_switcher = get_theme_mod('footer_socials_switcher', true);
+
 ?>
 <!-- Footer Area Start -->
 <footer>
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-lg-2 offset-lg-4 col-xl-2 offset-xl-5 text-center">
+      <div class="col-lg-3 offset-lg-1 col-xl-2 offset-xl-3">
+        <?php if (!empty($footer_socials_switcher)) : ?>
+          <div class="footer_socials">
+            <?php halle_footer_socials(); ?>
+          </div>
+        <?php endif; ?>
+      </div>
+      <div class="col-lg-2 col-xl-2 text-center">
         <img src="<?php echo esc_url($footer_logo); ?>" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
       </div>
       <div class="col-lg-6 col-xl-5">
