@@ -237,19 +237,15 @@ class SS_About extends Widget_Base {
                             if (!empty($ss_about_sliders)) :
                             ?>
                                 <div class="slider">
-                                    <div id="carouselExampleCaptions" class="carousel slide">
-                                        <div class="carousel-indicators">
-                                            <?php foreach ($ss_about_sliders as $key => $slider) : ?>
-                                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="<?php echo $key; ?>" class="<?php echo ($key == 0) ? 'active' : ''; ?>" aria-label="Slide <?php echo $key + 1; ?>"></button>
-                                            <?php endforeach; ?>
-                                        </div>
-                                        <div class="carousel-inner">
-                                            <?php foreach ($ss_about_sliders as $key => $slider) : ?>
-                                                <div class="carousel-item <?php echo ($key == 0) ? 'active' : ''; ?>">
-                                                    <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
-                                                </div>
-                                            <?php endforeach; ?>
-                                        </div>
+                                    <div class="owl-carousel owl-theme about-carousel">
+                                        <?php foreach ($ss_about_sliders as $key => $slider) : ?>
+                                            <div>
+                                                <a href="<?php echo esc_url($slider['about_slider_img']['url']); ?>" data-lightbox="about-carousel">
+                                                    <img src="<?php echo get_template_directory_uri() . '/assets/img/icons/zoom.png' ?>" class="zoom-icon" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
+                                                </a>
+                                                <img src="<?php echo esc_url($slider['about_slider_img']['url']); ?>" class="d-block w-100" alt="Halle 47 lieu culturel et d’échange Floirac Bordeaux Fayat Immobilier">
+                                            </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             <?php endif; ?>

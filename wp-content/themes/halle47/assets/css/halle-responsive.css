@@ -573,6 +573,12 @@
 	.gallery-section img.bottom-border {
 		bottom: -1px;
 	}
+
+	.gm-style-iw {
+		top: 165px !important;
+		left: 105px !important;
+		width: 200px !important;
+	}
 }
 
 /* Small devices (large mobile) (landscape phones, 480px to 767px) */

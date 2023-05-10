@@ -260,22 +260,21 @@ textarea:focus {
 .owl-carousel .owl-dots button {
 	width: 15px;
 	height: 15px;
-	background: #333;
+	background: #fff;
 	display: inline-block;
 	margin: 5px;
 	border-radius: 50%;
-	border: 2px solid #333;
 }
 
 .owl-carousel .owl-dots button.active {
-	background: #00c2fc;
+	background-color: var(--color-yellow);
 }
 
 .owl-carousel .owl-dots {
 	position: absolute;
-	bottom: 0;
+	bottom: 20px;
 	left: 50%;
-	margin-left: -25px;
+	transform: translateX(-50%);
 }
 
 .section-title h2 {
@@ -761,6 +760,18 @@ header p {
 	margin-left: auto;
 }
 
+.about-section .slider .owl-carousel.owl-drag .owl-item > div {
+	position: relative;
+}
+
+.about-section .slider .zoom-icon {
+	position: absolute;
+	top: 21px;
+	right: 21px;
+	cursor: pointer;
+	width: initial;
+}
+
 /* Urbanism Section */
 .urbanism-section {
 	padding: 100px 0;
@@ -908,6 +919,65 @@ header p {
 	bottom: -15px;
 	right: 0;
 	width: 100%;
+}
+
+#mrsmap {
+    width: 100%;
+	height: 797px;
+}
+
+.info-window {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#infobox {
+    border:none;
+}
+
+.info-content {
+    color: #999;
+}
+.gm-style-iw {
+  background-color: transparent !important;
+	box-shadow: none !important;
+	top: 255px !important;
+	left: 156px !important;
+}
+
+.gm-style-iw-tc {
+	display: none !important;
+}
+
+/* white background and box outline */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div
+{
+    /* we have to use !important because we are overwritng inline styles */
+    background-color: transparent !important;
+    box-shadow: none !important;
+    width: auto !important;
+    height: auto !important;
+    display: none;
+}
+
+/* arrow colour */
+.gm-style > div:first-child > div + div > div:last-child > div > div:first-child > div > div > div
+{
+    background-color: #003366 !important; 
+    box-shadow: #003366 !important;
+    display: none;
+}
+
+/* close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child
+{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+/* image icon inside close button */
+.gm-style > div:first-child > div + div > div:last-child > div > div:last-child > img
+{
+    display: transparent;
 }
 
 /* Subscription Section */

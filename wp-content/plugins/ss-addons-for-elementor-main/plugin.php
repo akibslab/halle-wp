@@ -151,6 +151,7 @@ class SS_Addons_Plugin {
 			'testimonial',
 			'info-box',
 			'subscription',
+			'map',
 			'contact-form'
 		];
 	}
